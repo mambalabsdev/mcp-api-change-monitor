@@ -1,0 +1,30 @@
+{
+  "name": "mcp-api-change-monitor",
+  "displayName": "API Change Monitor",
+  "version": "1.0.0",
+  "description": "MCP server for API Change Monitor. Watch the APIs you depend on and get only what changed since the last run: changelog entries tagged as deprecations or breaking changes, status incidents, OpenAPI diffs, and Sunset headers. Runs on Apify.",
+  "author": {
+    "name": "Mamba Labs",
+    "email": "labs@mambamindsetgrowth.com"
+  },
+  "homepage": "https://mambabuilt.com",
+  "repository": "https://github.com/mambalabsdev/mcp-api-change-monitor",
+  "license": "MIT",
+  "category": "productivity",
+  "tags": [
+    "api-monitoring",
+    "changelog",
+    "deprecation",
+    "openapi",
+    "status-page"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "api-monitoring",
+    "changelog",
+    "deprecation",
+    "openapi"
+  ],
+  "mcpServers": ".mcp.json"
+}

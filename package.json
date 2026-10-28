@@ -1,0 +1,50 @@
+{
+  "name": "@mambalabsdev/mcp-api-change-monitor",
+  "version": "1.0.0",
+  "description": "MCP server for API Change Monitor. Watch the APIs you depend on and get only what changed since the last run: changelog entries tagged as deprecations or breaking changes, status incidents, OpenAPI diffs, and Sunset headers. Runs on Apify.",
+  "type": "module",
+  "bin": {
+    "mcp-api-change-monitor": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "api-monitoring",
+    "changelog",
+    "deprecation",
+    "openapi",
+    "status-page",
+    "sunset-header",
+    "apify"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/api-change-monitor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-api-change-monitor"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-api-change-monitor"
+}
