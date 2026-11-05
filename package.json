@@ -1,6 +1,6 @@
 {
   "name": "@mambalabsdev/mcp-api-change-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for API Change Monitor. Watch the APIs you depend on and get only what changed since the last run: changelog entries tagged as deprecations or breaking changes, status incidents, OpenAPI diffs, and Sunset headers. Runs on Apify.",
   "type": "module",
   "bin": {
